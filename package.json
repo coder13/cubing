@@ -1,0 +1,25 @@
+{
+  "name": "cubing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "css-deploy": "npm run css-build && npm run css-postcss",
+    "css-build": "node-sass _sass/index.scss css/index.css",
+    "css-postcss": "postcss --use autoprefixer --output css/main.css css/main.css",
+    "css-watch": "npm run css-build -- --watch",
+    "start": "npm-run-all --parallel css-watch js-watch"
+  },
+  "author": "Caleb",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.2",
+    "bulma": "^0.9.3",
+    "node-sass": "^7.0.1",
+    "postcss-cli": "^9.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coder13/cubing.git"
+  }
+}

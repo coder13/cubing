@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+@import "../node_modules/bulma/sass/utilities/initial-variables";
+
+/* Coolors Exported Palette - coolors.co/80a1d4-333333-666a86-e8ddb5-edafb8 */
+
+/* HSL */
+$color1: hsla(216%, 49%, 67%, 1);
+$color2: hsla(0%, 0%, 20%, 1);
+$color3: hsla(233%, 14%, 46%, 1);
+$color4: hsla(47%, 53%, 81%, 1);
+$color5: hsla(351%, 63%, 81%, 1);
+
+/* RGB */
+$color1: rgba(128, 161, 212, 1);
+$color2: rgba(51, 51, 51, 1);
+$color3: rgba(102, 106, 134, 1);
+$color4: rgba(232, 221, 181, 1);
+$color5: rgba(237, 175, 184, 1);
+
+$family-sans-serif: "Roboto", BlinkMacSystemFont, -apple-system, "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+
+$blue: #6984AE;
+
+$body-font-size: 1.125em;
+$small-font-size: 1em;
+
+// $primary: $color1;
+// $link: $color3;
+// $info: $color4;
+// $info-invert: #333333;
+
+$sexy: $blue;
+
+@import "../node_modules/bulma/bulma";
+
+span.alg {
+  font-family: "Roboto Mono", monospace;
+  padding: .25em;
+  border-radius: 4px;
+  padding-left: .25em;
+  padding-right: .25em;
+  background-color: #efefef;
+}
+
+.blue {
+  color: $sexy;
+}
+
+td {
+  vertical-align: middle;
+}
+
+html, body {
+  margin: 1em;
+}
